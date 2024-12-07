@@ -303,6 +303,7 @@ footer img {
   padding: 0 25px;
   color: white;
   display: block;
+  text-align: right;
   transition: all 0.5s;
 }
 
