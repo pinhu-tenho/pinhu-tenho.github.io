@@ -1,3 +1,12 @@
+.lesson-wrapper {
+  height: 1000px;
+  padding-bottom: 80px;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
 .lesson {
   float: left;
   width: 25%;
@@ -8,6 +17,10 @@
     width: 50%;
     margin-bottom: 50px;
   }
+
+  .lesson-wrapper {
+    height: 1400px;
+  }
 }
 
 @media all and (max-width: 670px) {
@@ -16,6 +29,6 @@
   }
 
   .lesson-wrapper {
-    height: 1700px;
+    height: 2200px;
   }
 }
