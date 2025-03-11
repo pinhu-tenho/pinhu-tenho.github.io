@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>画像検索カメラ</title>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link rel="stylesheet" type="text/css" href="stylesheet4Columns.css">
+  <link rel="icon" href="./icon/MyVision_favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="./icon/MyVision_apple-touch-icon-180x180.png">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="header-left">
+        <a href="#"><img class="logo" src="./images/MyVision.png">画像検索カメラ</a>
+      </div>
+      <input type="checkbox" id="menu-btn-check">
+      <label for="menu-btn-check" class="menu-btn"><span class="fa fa-bars menu-icon"></span><span class="fa fa-times menu-icon-close"></span></label>
+      <div class="header-right">
+        <a href="#">概要</a>
+        <a href="#section1">機能</a>
+        <a href="#section2" class="login">お問い合わせ</a>
+      </div>
+      <div class="menu-content">
+        <ul>
+          <li>
+            <a href="#">概要</a>
+          </li>
+          <li>
+            <a href="#section1">機能</a>
+          </li>
+          <li>
+            <a href="#section2">お問い合わせ</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <div class="top-wrapper">
+    <div class="container">
+      <h1>概要</h1>
+        <p>画像検索カメラは指定した画像で画像、ページ、商品、音楽、地図を検索するアプリです。<br>検索結果を検索結果画面に表示します。<br>検索結果のページ、商品、音楽をアプリ内ブラウザで表示します。</p>
+        <p class="text-danger">アプリ内でGoogle Cloud APIを利用するためAPIキーを取得する必要があります。<br>APIキーの取得方法はブラウザで「google cloud apiキー 取得方法」などで検索して調べてください。(APIキーの取得方法の記事の例は<a href="https://zenn.dev/tmitsuoka0423/articles/get-gcp-api-key">こちら</a>)<br>APIキーは無料で取得できます。<br>無料で利用できる検索回数に制限があります。2025年時点で1ヶ月に約1000回まで検索できます。<br>制限を超えた場合、利用料金が掛かりますのでご注意ください。2025年時点で検索回数に応じた料金が掛かります。<br>当アプリでは検索1回に対してウェブ検出とランドマーク検出を適用するため、1ユニットのランドマーク検出と1ユニットのウェブ検出に対して料金が請求されます。<br>Cloud Vision APIの料金はブラウザで「cloud vision api 料金」などで検索して調べてください。(Cloud Vision APIの料金の記事の例は<a href="https://cloud.google.com/vision/pricing?hl=ja">こちら</a>)<br>利用料金が掛かるのはCloud Vision APIのみでアプリの利用料金は掛かりません。</p>
+    </div>
+  </div>
+  <div class="lesson-wrapper" id="section1">
+    <div class="container">
+      <div class="heading">
+        <h2>機能</h2>
+      </div>
+      <div class="lessons">
+        <div class="lesson">
+          <div class="lesson-icon">
+            <a href="./images/MyVision_0001.PNG"><img src="./images/MyVision_0001.PNG"></a>
+          </div>
+          <p class="text-contents">ホーム画面です。カメラ、フォトライブラリーから画像を取得できます。</p>
+        </div>
+        <div class="lesson">
+          <div class="lesson-icon">
+            <a href="./images/MyVision_0002.PNG"><img src="./images/MyVision_0002.PNG"></a>
+          </div>
+          <p class="text-contents">検索結果画面の画像タブです。完全一致画像、部分一致画像、類似画像が見つかった場合、画像を表示します。シェアボタンで選択した画像を共有、保存できます。</p>
+        </div>
+        <div class="lesson">
+          <div class="lesson-icon">
+            <a href="./images/MyVision_0003.PNG"><img src="./images/MyVision_0003.PNG"></a>
+          </div>
+          <p class="text-contents">検索結果画面のページタブです。画像が一致するページが見つかった場合、ページタブを表示します。</p>
+        </div>
+        <div class="lesson">
+          <div class="lesson-icon">
+            <a href="./images/MyVision_0004.PNG"><img src="./images/MyVision_0004.PNG"></a>
+          </div>
+          <p class="text-contents">検索結果画面のamazonタブです。最良の推測ラベルが見つかった場合、amazonタブを表示します。</p>
+        </div>
+        <div class="lesson">
+          <div class="lesson-icon">
+            <a href="./images/MyVision_0005.PNG"><img src="./images/MyVision_0005.PNG"></a>
+          </div>
+          <p class="text-contents">検索結果画面のSpotifyタブです。最良の推測ラベルが見つかった場合、Spotifyタブを表示します。</p>
+        </div>
+        <div class="lesson">
+          <div class="lesson-icon">
+            <a href="./images/MyVision_0006.PNG"><img src="./images/MyVision_0006.PNG"></a>
+          </div>
+          <p class="text-contents">検索結果画面の地図タブです。ランドマークが見つかった場合、地図タブを表示します。</p>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+  <div class="message-wrapper" id="section2">
+    <div class="container">
+      <div class="heading">
+        <h2>お問い合わせ</h2>
+        <h3>何かご不明な点がございましたらお問い合わせください。</h3>
+        <h3>pinhu.tenho@gmail.com</h3>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="container">
+      <img src="./images/MyVision.png">
+      <p>画像検索カメラ</p>
+      <p><a href="./index.html">プライバシーポリシー</a></p>
+    </div>
+  </footer>
+</body>
+</html>
