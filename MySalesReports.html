@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>開発者用売上報告</title>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link rel="icon" href="./icon/MySalesReports_favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="./icon/MySalesReports_apple-touch-icon-180x180.png">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="header-left">
+        <a href="#"><img class="logo" src="./images/MySalesReports.png">開発者用売上報告</a>
+      </div>
+      <input type="checkbox" id="menu-btn-check">
+      <label for="menu-btn-check" class="menu-btn"><span class="fa fa-bars menu-icon"></span><span class="fa fa-times menu-icon-close"></span></label>
+      <div class="header-right">
+        <a href="#">概要</a>
+        <a href="#section1">機能</a>
+        <a href="#section2" class="login">お問い合わせ</a>
+      </div>
+      <div class="menu-content">
+        <ul>
+          <li>
+            <a href="#">概要</a>
+          </li>
+          <li>
+            <a href="#section1">機能</a>
+          </li>
+          <li>
+            <a href="#section2">お問い合わせ</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <div class="top-wrapper">
+    <div class="container">
+      <h1>概要</h1>
+      <p>開発者用売上報告は日、週、月、年単位の新規ダウンロード数を検索する開発者用アプリです。<br>検索結果を一覧表示します。<br>新規ダウンロード数は「<a href="https://developer.apple.com/documentation/appstoreconnectapi/get-v1-salesreports">Download Sales and Trends Reports</a>」のAPIから取得した「Product type identifiers」の値が「1」「1F」「1T」「F1」の「Units」の値をアプリ単位で集計した数です。</p>
+      <p class="text-danger">アプリ内でApp Store Connect APIを利用するためAPIキーを取得する必要があります。<br>APIキーの取得方法はブラウザで「<a href="https://developer.apple.com/jp/help/app-store-connect/get-started/app-store-connect-api/">App Store Connect API</a>」を検索して<br>App Store Connect APIへのアクセスのリクエスト<br>チームAPIキーの生成(「アクセス」でユーザの役割を選択する際「Finance」を選択してください)<br>で確認できます。<br>設定タブの「Issuer ID」「Key ID」に入力する値はチームAPIキーを生成した画面で確認できます。<br>設定タブの「Private Key」に入力する値はチームAPIキーを生成した画面でダウンロードしたAPIキーのファイルの中身です。<br>設定タブの「Vendor Number」に入力する値はベンダー番号です。<br>ベンダー番号の取得方法はブラウザで「<a href="https://developer.apple.com/jp/help/app-store-connect/getting-paid/view-payments-and-proceeds/">支払いと収益の表示</a>」を検索して<br>ベンダー番号の表示<br>で確認できます。</p>
+    </div>
+  </div>
+  <div class="lesson-wrapper" id="section1">
+    <div class="container">
+      <div class="heading">
+        <h2>機能</h2>
+      </div>
+      <div class="lessons">
+        <div class="lesson">
+          <div class="lesson-icon">
+            <a href="./images/MySalesReports_0001.PNG"><img src="./images/MySalesReports_0001.PNG"></a>
+          </div>
+          <p class="text-contents">ホームタブです。検索条件を指定します。検索結果を一覧表示します。</p>
+        </div>
+        <div class="lesson">
+          <div class="lesson-icon">
+            <a href="./images/MySalesReports_0002.PNG"><img src="./images/MySalesReports_0002.PNG"></a>
+          </div>
+          <p class="text-contents">設定タブです。検索に必要な値を設定します。</p>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+  <div class="message-wrapper" id="section2">
+    <div class="container">
+      <div class="heading">
+        <h2>お問い合わせ</h2>
+        <h3>何かご不明な点がございましたらお問い合わせください。</h3>
+        <h3>pinhu.tenho@gmail.com</h3>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="container">
+      <img src="./images/MySalesReports.png">
+      <p>開発者用売上報告</p>
+      <p><a href="./index.html">プライバシーポリシー</a></p>
+    </div>
+  </footer>
+</body>
+</html>
